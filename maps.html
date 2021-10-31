@@ -7,7 +7,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 
 
     <title>Esports CSGO</title>
@@ -16,42 +16,58 @@
     <div class="container">
     <h1>Counter Strike Global Offensive</h1>
     <div class="row">  <!--- linkit toisiin sivuihin ---->
-      <div class="col-md-1"><a href="index.html">Pääsivu</a></div>
-      <div class="col-md-1"><a href="maps.html">Kartat</a></div>
-      <div class="col-md-1">testi3</div>
+        <div class="col-md-1"><a href="index.html">Pääsivu</a></div>
+        <div class="col-md-1"><a href="maps.html">Kartat</a></div>
+        <div class="col-md-1">testi3</div>
     </div>
     </div> <!-- container loppu ENSIMMÄINEN RIVI LINKEILLE YMS. -->
     <div class="container">
-    <img src="csgo2.jpg" id="CounterStrikeGo" class="rounded mx-auto d-block" alt="CSGO" style="padding-top: 5%;">
+    <img src="csgomaps.jpg" id="CounterStrikeGo" class="rounded mx-auto d-block" alt="CSGO Maps" style="padding-top: 5%;">
     </div>
     <div class="container">
     <div class="row" style="padding-top: 5%;">
-        <div class="col-md-8">Counter-Strike on Valve Corporationin eteenpäin kehittämä ja vuonna 2000 julkaisema internetissä pelattava joukkuepohjainen taktinen ensimmäisen persoonan ammuntapeli.
-            2004 pelistä julkaistiin pelisarjan seuraava versio uudella pelimoottorilla nimeltä Counter Strike: Source.
-            Ja pelisarjan uusimpana tuotteena on uusimmalla Source-pelimoottori versiolla julkaistu Counter Strike: Global Offensive.
-            Counter Strike sarja on yksi suosituimmista esports peleistä, turnauksia on järjestetty noin vuodesta 2001 lähtien.
-            Counter-Strike on 4. suurin kilpapeli palkintorahojen määrässä vuoden 2016 alkupuolella.
-            Counter-Strike: Global Offensive oli kolmanneksi suosituin kilpapeli vuoden 2014 marraskuussa.
+        <div class="col-md-8"><canvas id="myChart" style="max-width:1000px;padding-left: 10%;"></canvas></div>
+        <div class="col-md-4">CSGO Pro turnauksissa kartta valikoima on aina 7 kartasta.
+            Tässä näkyy dataa vuoden 2019 ensimmäisestä Major turnauksesta. Taulukosta näkee kuinka paljon tiettyjä mappeja pelattiin majorin aikana.
+            CSGO kartat vaihtelee harvoin, esim. kun vanhempi kartta saa päivityksen ja tuodaan takaisin peli valikoimaan. 2019 Vuoden aikana Cache vaihtoi Vertigon kanssa paikkaa ja poistui mappivalikoimasta.
         </div>
-        <div class="col-md-4"><img src="csgo1.jpg" id="CounterStrikeGo" class="img-responsive img-rounded pull-right" alt="CS1.6" style="padding-top: 5%; width: 100%;"></div>
-    </div>    
     </div> <!--Container loppu TOINEN RIVI LOPETUS-->
     <div class="container">
     <div class="row" style="padding-top: 5%; padding-bottom: 5%;">
-        <div class="col-md-6">
-            <div class="embed-responsive embed-responsive-21by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=a1lK2CKKGzI&" allowfullscreen></iframe>
-            </div>
+        <div class="col-md-8">
+            Tänä päivänä mappi valikoima muodostuu näistä 7 kartasta. Suurin osa kartoista on pysynyt suurimmaksi osaksi samanlaisina kuin aikaisemmin.
+            Mutta niihin on tullut pieniä päivityksiä mitkä ovat silti vaikuttaneet kartan pelattavuuteen. Peliyhteisöllä on aina omat mielipiteet kartoista, 
+            mutta Valve loppujen lopuksi päättää mitä kartoista muutetaan. Pro pelaajille annetaan yleisesti muutama kuukausi aikaa tottua uusiin muutoksiin, ennenkuin kartat tulee muutettuna turnauksiin.
             </div> 
-        <div class="col-md-6">Pelisarjan pelit ovat ensimmäisesta persoonasta kuvattuja taktisia ammuntapelejä. Tehtävän tyyppi riippuu pelattavasta kartasta.
-            Perinteinen pelimuoto Esports peleissä on Pommitehtävä. Pommitehtävässä terroristit pyrkivät virittää C-4-pommin jollekin kahdelle ennalta määrätystä kohteesta. 
-            Mikäli pommi on viritetty, erikoisjoukkojen tulee purkaa se ennen räjähtämistä. Mikäli terroristit eivät ehdi virittää pommia ennen aikarajaa, erikoisjoukot voittavat.
+        <div class="col-md-4">
+            <div class="btn-group dropright">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Karttavalikoima 2021
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Dust2</a>
+                  <a class="dropdown-item" href="#">Vertigo</a>
+                  <a class="dropdown-item" href="#">Mirage</a>
+                  <a class="dropdown-item" href="#">Nuke</a>
+                  <a class="dropdown-item" href="#">Inferno</a>
+                  <a class="dropdown-item" href="#">Ancient</a>
+                  <a class="dropdown-item" href="#">Overpass</a>
+                </div>
+              </div>
         </div>
+        
     </div>
     </div>
-    </div> <!-- CONTAINER LOPPUU, viimeinen rivi -->
-
-
+    </div> <!-- CONTAINER LOPPUU, Toinen rivi -->
+    <div class="container">
+        <div class="row" style="padding-top: 5%; padding-bottom: 5%;">
+            <div class="col-md-6">CSGO asevalikoima on kattava, ja aseita löytyy käsiaseita, rynnäkkökiväärejä, tarkkuuskivääreitä, haulikoita, konepistooleja, kranaatteja.
+                Suosituimpia aseita pro peleissä on AK47, AWP, M4A1. Aseiden käyttö myös määrittyy aseiden tehokkuudesta ja hinnasta. Esim. 2019 Majorin aikaan AUG oli pelissä tehokkaampi kuin nykyään ja sen takia sen käyttö näkyy myös tilastoissa.
+                Nykyään AUG ei ole käytössä läheskään niin paljon kuin 2019 aikaan, koska ase sai muutoksia mitkä poistivat sen pro pelaajien käytöstä.
+            </div>
+            <div class="col-md-6"><canvas id="pieChart" style="max-width:1000px;padding-left: 10%;"></canvas></div>
+        </div>
+    </div> <!-- CONTAINER 3 RIVI LOPPUU-->
 
     <!-- FOOTER ALKAA TÄSTÄ -->
 
@@ -186,5 +202,56 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <!-- TÄMÄ ON BAR CHART MAPEISTA-->
+    <script>    
+        var xValues = ["Mirage", "Inferno", "Dust2", "Train", "Overpass", "Cache", "Nuke"];
+        var yValues = [16, 13, 11, 9, 7, 6, 4, 0,];
+        var barColors = ["blue", "lightblue","green","lightgreen","brown", "red", "black",];
+        
+        new Chart("myChart", {
+          type: "bar",
+          data: {
+            labels: xValues,
+            datasets: [{
+              backgroundColor: barColors,
+              data: yValues
+            }]
+          },
+          options: {
+            legend: {display: false},
+            title: {
+              display: true,
+              text: "CSGO Maps played in Katowice 2019 Major"
+            }
+          }
+        });
+        </script> <!-- BAR CHART LOPETUS -->
+
+            <!-- PIIRAKKA ASEISTA -->
+        <script> 
+            var xValues = ["AK47", "AUG", "AWP", "M4A1", "USP", "Glock", "Deagle", "UMP45", "Other"];
+            var yValues = [33, 19, 13, 6, 5, 3, 3, 2, 16,];
+            var barColors = ["blue", "orange","green","gray","brown", "red", "black", "lightgreen", "blueviolet"];
+
+            new Chart("pieChart", {
+            type: "pie",
+            data: {
+                labels: xValues,
+                datasets: [{
+                backgroundColor: barColors,
+                data: yValues
+                }]
+            },
+            options: {
+                title: {
+                display: true,
+                text: "Top Weapons 2019 Katowice Major"
+                }
+            }
+            });
+        </script>
+        <!-- PIIRAKKA CHART LOPETUS-->
+
     </body>
 </html>
