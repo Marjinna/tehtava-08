@@ -1,20 +1,21 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 
-    <title>Esports CSGO</title>
-  </head>
-  
-  <body>
-    <div class="container">
+  <title>Esports CSGO</title>
+</head>
+
+<body>
+  <div class="container">
     <h1>Counter Strike Global Offensive</h1>
 
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
@@ -25,72 +26,82 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Pääsivu</a>
+            <a class="nav-link" href="wframe.html">Pääsivu</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="maps.html">Mapit</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="teams.html">Tiimit</a>
-          </li>    
+          </li>
         </ul>
-      </div>    
+      </div>
     </nav>
 
     <div class="container">
       <div class="row">
-      <div class="col-md-12">
-    <img src="csgomaps.jpg" id="CounterStrikeGo" class="rounded mx-auto d-block" alt="CSGO Maps" style="padding-top: 2.5%; width: 100%;">
-    </div>
-    </div>
+        <div class="col-md-12">
+          <img src="csgomaps.jpg" id="CounterStrikeGo" class="rounded mx-auto d-block" alt="CSGO Maps"
+            style="padding-top: 2.5%; width: 100%;">
+        </div>
+      </div>
     </div>
     <div class="container">
-    <div class="row" style="padding-top: 5%;">
+      <div class="row" style="padding-top: 5%;">
         <div class="col-md-8"><canvas id="myChart" style="max-width:1000px;"></canvas></div>
         <div class="col-md-4" style="padding-top: 2.5%;">CSGO Pro turnauksissa kartta valikoima on aina 7 kartasta.
-            Tässä näkyy dataa vuoden 2019 ensimmäisestä Major turnauksesta. Taulukosta näkee kuinka paljon tiettyjä mappeja pelattiin majorin aikana.
-            CSGO kartat vaihtelee harvoin, esim. kun vanhempi kartta saa päivityksen ja tuodaan takaisin peli valikoimaan. 2019 Vuoden aikana Cache vaihtoi Vertigon kanssa paikkaa ja poistui mappivalikoimasta.
+          Tässä näkyy dataa vuoden 2019 ensimmäisestä Major turnauksesta. Taulukosta näkee kuinka paljon tiettyjä
+          mappeja pelattiin majorin aikana.
+          CSGO kartat vaihtelee harvoin, esim. kun vanhempi kartta saa päivityksen ja tuodaan takaisin peli valikoimaan.
+          2019 Vuoden aikana Cache vaihtoi Vertigon kanssa paikkaa ja poistui mappivalikoimasta.
         </div>
+      </div>
     </div>
-    </div> <!--Container loppu TOINEN RIVI LOPETUS-->
+    <!--Container loppu TOINEN RIVI LOPETUS-->
     <div class="container">
-    <div class="row" style="padding-top: 5%;">
+      <div class="row" style="padding-top: 5%;">
         <div class="col-md-8">
-            Tänä päivänä mappi valikoima muodostuu näistä 7 kartasta. Suurin osa kartoista on pysynyt suurimmaksi osaksi samanlaisina kuin aikaisemmin.
-            Mutta niihin on tullut pieniä päivityksiä mitkä ovat silti vaikuttaneet kartan pelattavuuteen. Peliyhteisöllä on aina omat mielipiteet kartoista, 
-            mutta Valve loppujen lopuksi päättää mitä kartoista muutetaan. Pro pelaajille annetaan yleisesti muutama kuukausi aikaa tottua uusiin muutoksiin, ennenkuin kartat tulee muutettuna turnauksiin.
-            </div> 
+          Tänä päivänä mappi valikoima muodostuu näistä 7 kartasta. Suurin osa kartoista on pysynyt suurimmaksi osaksi
+          samanlaisina kuin aikaisemmin.
+          Mutta niihin on tullut pieniä päivityksiä mitkä ovat silti vaikuttaneet kartan pelattavuuteen. Peliyhteisöllä
+          on aina omat mielipiteet kartoista,
+          mutta Valve loppujen lopuksi päättää mitä kartoista muutetaan. Pro pelaajille annetaan yleisesti muutama
+          kuukausi aikaa tottua uusiin muutoksiin, ennenkuin kartat tulee muutettuna turnauksiin.
+        </div>
         <div class="col-md-4" style="padding-top: 2.5%;">
-            <div class="btn-group dropright">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Karttavalikoima 2021
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Dust2</a>
-                  <a class="dropdown-item" href="#">Vertigo</a>
-                  <a class="dropdown-item" href="#">Mirage</a>
-                  <a class="dropdown-item" href="#">Nuke</a>
-                  <a class="dropdown-item" href="#">Inferno</a>
-                  <a class="dropdown-item" href="#">Ancient</a>
-                  <a class="dropdown-item" href="#">Overpass</a>
-                </div>
-              </div>
-        </div>
-        
-    </div>
-    </div>
-     <!-- CONTAINER LOPPUU, Toinen rivi -->
-    <div class="container">
-        <div class="row" style="padding-top: 2.5%; padding-bottom: 5%;">
-            <div class="col-md-6">CSGO asevalikoima on kattava, ja aseita löytyy käsiaseita, rynnäkkökiväärejä, tarkkuuskivääreitä, haulikoita, konepistooleja, kranaatteja.
-                Suosituimpia aseita pro peleissä on AK47, AWP, M4A1. Aseiden käyttö myös määrittyy aseiden tehokkuudesta ja hinnasta. Esim. 2019 Majorin aikaan AUG oli pelissä tehokkaampi kuin nykyään ja sen takia sen käyttö näkyy myös tilastoissa.
-                Nykyään AUG ei ole käytössä läheskään niin paljon kuin 2019 aikaan, koska ase sai muutoksia mitkä poistivat sen pro pelaajien käytöstä.
+          <div class="btn-group dropright">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Karttavalikoima 2021
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Dust2</a>
+              <a class="dropdown-item" href="#">Vertigo</a>
+              <a class="dropdown-item" href="#">Mirage</a>
+              <a class="dropdown-item" href="#">Nuke</a>
+              <a class="dropdown-item" href="#">Inferno</a>
+              <a class="dropdown-item" href="#">Ancient</a>
+              <a class="dropdown-item" href="#">Overpass</a>
             </div>
-            <div class="col-md-6" style="padding-top: 2.5%; padding-bottom: 5%;"><canvas id="pieChart"></canvas></div>
+          </div>
         </div>
+
+      </div>
+    </div>
+    <!-- CONTAINER LOPPUU, Toinen rivi -->
+    <div class="container">
+      <div class="row" style="padding-top: 2.5%; padding-bottom: 5%;">
+        <div class="col-md-6">CSGO asevalikoima on kattava, ja aseita löytyy käsiaseita, rynnäkkökiväärejä,
+          tarkkuuskivääreitä, haulikoita, konepistooleja, kranaatteja.
+          Suosituimpia aseita pro peleissä on AK47, AWP, M4A1. Aseiden käyttö myös määrittyy aseiden tehokkuudesta ja
+          hinnasta. Esim. 2019 Majorin aikaan AUG oli pelissä tehokkaampi kuin nykyään ja sen takia sen käyttö näkyy
+          myös tilastoissa.
+          Nykyään AUG ei ole käytössä läheskään niin paljon kuin 2019 aikaan, koska ase sai muutoksia mitkä poistivat
+          sen pro pelaajien käytöstä.
+        </div>
+        <div class="col-md-6" style="padding-top: 2.5%; padding-bottom: 5%;"><canvas id="pieChart"></canvas></div>
+      </div>
     </div> <!-- CONTAINER 3 RIVI LOPPUU-->
-
-
 
     <!-- FOOTER ALKAA TÄSTÄ -->
 
@@ -101,104 +112,53 @@
         <section class="">
           <div class="row">
             <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-              <div
-                class="bg-image hover-overlay ripple shadow-1-strong rounded"
-                data-ripple-color="light"
-              >
-                <img
-                  src="https://media.tycsports.com/files/2019/03/04/44489/astralis-katowice19.jpg"
-                  class="w-100"
-                />
+              <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                <img src="https://media.tycsports.com/files/2019/03/04/44489/astralis-katowice19.jpg" class="w-100" />
                 <a href="#!">
-                  <div
-                    class="mask"
-                    style="background-color: rgba(251, 251, 251, 0.2);"
-                  ></div>
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
                 </a>
               </div>
             </div>
             <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-              <div
-                class="bg-image hover-overlay ripple shadow-1-strong rounded"
-                data-ripple-color="light"
-              >
-                <img
-                  src="https://archive.esportsobserver.com/wp-content/uploads/2019/03/CSGO-Twitch.jpg"
-                  class="w-100"
-                />
+              <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                <img src="https://archive.esportsobserver.com/wp-content/uploads/2019/03/CSGO-Twitch.jpg"
+                  class="w-100" />
                 <a href="#!">
-                  <div
-                    class="mask"
-                    style="background-color: rgba(251, 251, 251, 0.2);"
-                  ></div>
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
                 </a>
               </div>
             </div>
             <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-              <div
-                class="bg-image hover-overlay ripple shadow-1-strong rounded"
-                data-ripple-color="light"
-              >
-                <img
-                  src="https://egamersworld.com/uploads/news/1564666260593-1.jpg"
-                  class="w-100"
-                />
+              <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                <img src="https://egamersworld.com/uploads/news/1564666260593-1.jpg" class="w-100" />
                 <a href="#!">
-                  <div
-                    class="mask"
-                    style="background-color: rgba(251, 251, 251, 0.2);"
-                  ></div>
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
                 </a>
               </div>
             </div>
             <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-              <div
-                class="bg-image hover-overlay ripple shadow-1-strong rounded"
-                data-ripple-color="light"
-              >
-                <img
-                  src="https://pbs.twimg.com/media/DFXLbbdXcAAZbT3.jpg"
-                  class="w-100"
-                />
+              <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                <img src="https://pbs.twimg.com/media/DFXLbbdXcAAZbT3.jpg" class="w-100" />
                 <a href="#!">
-                  <div
-                    class="mask"
-                    style="background-color: rgba(251, 251, 251, 0.2);"
-                  ></div>
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
                 </a>
               </div>
             </div>
             <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-              <div
-                class="bg-image hover-overlay ripple shadow-1-strong rounded"
-                data-ripple-color="light"
-              >
+              <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
                 <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfCOSWkFRSjTRqCSayHn0NHC6BNZ1oUaO5oA&usqp=CAU"
-                  class="w-100"
-                />
+                  class="w-100" />
                 <a href="#!">
-                  <div
-                    class="mask"
-                    style="background-color: rgba(251, 251, 251, 0.2);"
-                  ></div>
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
                 </a>
               </div>
             </div>
             <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-              <div
-                class="bg-image hover-overlay ripple shadow-1-strong rounded"
-                data-ripple-color="light"
-              >
-                <img
-                  src="https://is.mediadelivery.fi/img/468/fc5e1c07202a48cbb984e75ce5a412ed.jpg"
-                  class="w-100"
-                />
+              <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                <img src="https://is.mediadelivery.fi/img/468/fc5e1c07202a48cbb984e75ce5a412ed.jpg" class="w-100" />
                 <a href="#!">
-                  <div
-                    class="mask"
-                    style="background-color: rgba(251, 251, 251, 0.2);"
-                  ></div>
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
                 </a>
               </div>
             </div>
@@ -207,10 +167,10 @@
         <!-- Section: Images -->
       </div>
       <!-- Grid container -->
-    
+
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        
+
         <a class="text-white" href="https://www.hltv.org/" target="_blank">HLTV.org</a>
       </div>
       <!-- Copyright -->
@@ -222,59 +182,66 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+
     <!-- TÄMÄ ON BAR CHART MAPEISTA-->
-    <script>    
-        var xValues = ["Mirage", "Inferno", "Dust2", "Train", "Overpass", "Cache", "Nuke"];
-        var yValues = [16, 13, 11, 9, 7, 6, 4, 0,];
-        var barColors = ["blue", "lightblue","green","lightgreen","brown", "red", "black",];
-        
-        new Chart("myChart", {
-          type: "bar",
-          data: {
-            labels: xValues,
-            datasets: [{
-              backgroundColor: barColors,
-              data: yValues
-            }]
-          },
-          options: {
-            legend: {display: false},
-            title: {
-              display: true,
-              text: "CSGO Maps played in Katowice 2019 Major" 
-            }
+    <script>
+      var xValues = ["Mirage", "Inferno", "Dust2", "Train", "Overpass", "Cache", "Nuke"];
+      var yValues = [16, 13, 11, 9, 7, 6, 4, 0,];
+      var barColors = ["blue", "lightblue", "green", "lightgreen", "brown", "red", "black",];
+
+      new Chart("myChart", {
+        type: "bar",
+        data: {
+          labels: xValues,
+          datasets: [{
+            backgroundColor: barColors,
+            data: yValues
+          }]
+        },
+        options: {
+          legend: { display: false },
+          title: {
+            display: true,
+            text: "CSGO Maps played in Katowice 2019 Major"
           }
-        });
-        </script> <!-- BAR CHART LOPETUS -->
+        }
+      });
+    </script> <!-- BAR CHART LOPETUS -->
 
-            <!-- PIIRAKKA ASEISTA -->
-        <script> 
-            var xValues = ["AK47", "AUG", "AWP", "M4A1", "USP", "Glock", "Deagle", "UMP45", "Other"];
-            var yValues = [33, 19, 13, 6, 5, 3, 3, 2, 16,];
-            var barColors = ["blue", "orange","green","gray","brown", "red", "black", "lightgreen", "blueviolet"];
+    <!-- PIIRAKKA ASEISTA -->
+    <script>
+      var xValues = ["AK47", "AUG", "AWP", "M4A1", "USP", "Glock", "Deagle", "UMP45", "Other"];
+      var yValues = [33, 19, 13, 6, 5, 3, 3, 2, 16,];
+      var barColors = ["blue", "orange", "green", "gray", "brown", "red", "black", "lightgreen", "blueviolet"];
 
-            new Chart("pieChart", {
-            type: "pie",
-            data: {
-                labels: xValues,
-                datasets: [{
-                backgroundColor: barColors,
-                data: yValues
-                }]
-            },
-            options: {
-                title: {
-                display: true,
-                text: "Top Weapons 2019 Katowice Major"
-                }
-            }
-            });
-        </script>
-        <!-- PIIRAKKA CHART LOPETUS-->
+      new Chart("pieChart", {
+        type: "pie",
+        data: {
+          labels: xValues,
+          datasets: [{
+            backgroundColor: barColors,
+            data: yValues
+          }]
+        },
+        options: {
+          title: {
+            display: true,
+            text: "Top Weapons 2019 Katowice Major"
+          }
+        }
+      });
+    </script>
+    <!-- PIIRAKKA CHART LOPETUS-->
 
-    </body>
+</body>
+
 </html>
